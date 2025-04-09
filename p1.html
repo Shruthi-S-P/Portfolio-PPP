@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!-- Header & navbar Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#portfolio">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class='bx bx-chevrons-right' onclick="closemenu()"> </i>
+            </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
+
+        </nav>
+
+    </header>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Shruthi S</h1>
+
+
+            <div class="home-sci">
+
+                <a href="https://www.linkedin.com/in/shruthi-s-5a29a9315/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Shruthi-S-P"><i class='bx bxl-github'></i></a>
+                <a href="mailto: shruthispoojari46@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.instagram.com/shruthi.s.poojari/"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#about" class="button-box"> More About Me</a>
+        </div>
+    </section>
+    <!-- About section -->
+
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pc1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="ji">Hello, I'm Shruthi S, based in Bangalore, India. With a deep passion for technology,<br>
+                        I specialize in FrontEnd and thrive on crafting innovative solutions that enhance efficiency and
+                        scalability.<br>
+                        As a motivated newcomer to the industry, I bring not just technical skills but also
+                        self-discipline,
+                        adaptability, and a collaborative mindset. <br>
+                        I'm eager to apply my expertise to real-worldprojects,
+                        driving meaningful advancements in technology.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>Languages:</span><br>Python, Java, HTML, CSS, JavaScript</li>
+                            <li><span>Frameworks: </span><br>Bootstrap</li>
+                            <li> <span>Tools:</span><br>VS Code,Git</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>Varcons Technologies Pvt Ltd, Bengaluru </span><br>Full Stack Web Development
+                                Intern </li>
+                            <li><span>Prodigy Infotech </span><br>Machine Learning Intern </li>
+                            <li> <span>Karunadu Technologies Pvt Ltd, Bengaluru</span><br>DataScience and Machine
+                                Learning Intern</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li><span>Impact College of Engineering and Applied Sciences, Bengaluru </span><br>Computer
+                                Science & Engineering CGPA:8.8/10 </li>
+                            <li><span>MES PU College, Bengaluru</span><br>Pre-University in Science -82% </li>
+                            <li> <span>KMWA Vidyanikethan , Bengaluru </span><br>SSLC -95%</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+
+    <section class="projects" id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title"> My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/br.jpeg">
+                    <div class="layer">
+                        <h3>Brain Tumor Detection</h3>
+                        <p>It is a website for brain tumor detection that analyze MRI scans and identify potential
+                            tumors.
+                            The platform offers a way to preliminary diagnostic
+                            insights, aiding early detection and treatment.</p>
+                        <a href="https://github.com/Shruthi-S-P/Brain_tumor_Detection"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="images/library.jpeg">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>
+                            The platform offers features like book cataloging, user registration, book issue/return
+                            tracking, and an intuitive interface for efficient library operations.</p>
+                        <a href="https://github.com/Shruthi-S-P"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="images/food.jpeg">
+                    <div class="layer">
+                        <h3>Food Prediction Model</h3>
+                        <p>
+                            I trained a machine learning model to predict different types of food items based on images.
+                            The model analyzes visual features to accurately classify food categories, helping in tasks
+                            like calorie estimation or meal tracking.</p>
+                        <a href="https://github.com/Shruthi-S-P/Prodigy_internship_t5"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Shruthi-S-P" class="btn">See More</a>
+
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxl-gmail'></i> shruthispoojari46@gmail.com</p>
+                    <p><i class='bx bx-phone'></i>9449063139</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/shruthi-s-5a29a9315/"><i
+                                class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/Shruthi-S-P"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/channel/UC9Q2k41a_f8KEePJaOvCCxg"><i
+                                class='bx bxl-youtube'></i></a>
+                        <a href="https://www.instagram.com/shruthi.s.poojari/"><i class='bx bxl-instagram'></i></a>
+
+
+                    </div>
+                    <a href="Resume (2).pdf" download class="btn btn2" id="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 My Portfolio. All Rights Reserved</p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
